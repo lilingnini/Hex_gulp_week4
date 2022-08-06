@@ -1,0 +1,102 @@
+.footer{
+    background-color:$primary_color;
+    padding-top: 48px;
+    .footer-navbar{
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      .footer-navbar-menu{
+        width:40%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0px;
+        & a{
+          gap: 24px;
+        }
+      }
+      .footer-navbar-media{
+        width: 15.75%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+      }
+    }
+    .footer-contact{
+      font-size: 36px;
+      flex-direction: column;
+      & span{
+        font-size: 36px;
+      }
+      .footer-contact-box{
+        padding-bottom: 32px;
+        border-bottom: 1px solid #fff;
+        .footer-contact-phone,.footer-contact-letter{
+          align-items: center;
+          gap:20px;
+        }
+        .footer-navbar-media-s{
+          display: none;
+        }
+      }
+      }
+      .footer-copyright{
+        padding-top: 8px;
+        justify-content: space-between;
+        align-items: center;
+        .footer-copyright-box {
+          gap: 48px;
+          & a{
+            padding: 24px 0;
+          }
+        }
+      }
+  }
+
+  @media(max-width:992px){
+    .footer-navbar-menu{
+      width: 65%;
+    }
+    .footer-navbar-media{
+      width: 26%;
+    }
+  }
+  @media(max-width:603px){
+    .footer-navbar{
+      display:none;
+    }
+    .footer,.footer-copyright{
+      padding-top: 24px;
+    }
+    .footer-contact-box {
+      padding-bottom: 24px;
+    }
+    .footer-contact,.footer-contact span{
+      font-size: 16px;
+      }
+    .footer-copyright,.footer-copyright-box{
+      flex-direction: column;
+      align-items: flex-start;
+      gap:8px;
+    }
+    .footer-copyright-box a{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .footer-copyright-box i{
+      margin-right: 8px;
+    }
+    .footer-navbar-media-s{
+      display: block;
+      display: flex;
+      width: 22%;
+      justify-content: space-between;
+      gap:8px;
+    }
+    .footer-contact-content{
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-contact-phone,.footer-contact-letter{
+      gap:4px;
+    }
+}

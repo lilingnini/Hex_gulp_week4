@@ -1,0 +1,18 @@
+@import "./reset";
+@import "./grid";
+@import "./utility";
+@import "./base";
+
+
+h2{
+    font-size: 48px;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+}
+h3{
+    font-size: 26px;
+}
+.faq{
+  padding-top: 96px;  
+  padding-bottom: 80px;
+}
